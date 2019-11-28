@@ -1,8 +1,3 @@
-// module.exports = function (app, db) {
-// //    
-// // };
-
-
 import {Request, Response} from "express";
 import {SpellcheckController} from "../controllers/spellcheckController";
 
