@@ -1,0 +1,35 @@
+{
+  "name": "elar.fips.node.spellcheck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start:prod": "tsc && node dist/index.js",
+    "start": "npm run build:live",
+    "lint": "eslint src --ext ts",
+    "test": "tsc && mocha dist/**/*.spec.js",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "spell-checker-js": "^1.2.6",
+    "yarn": "^1.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^12.12.14",
+    "@types/mocha": "^5.2.7",
+    "mocha": "^6.2.2",
+    "@typescript-eslint/eslint-plugin": "^2.9.0",
+    "@typescript-eslint/parser": "^2.9.0",
+    "eslint": "^6.7.1",
+    "nodemon": "^2.0.1",
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.2"
+  }
+}
