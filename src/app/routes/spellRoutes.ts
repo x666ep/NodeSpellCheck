@@ -11,8 +11,9 @@ export class SpellRoutes {
                     message: 'Welcome to spellcheck micro-service! For check you string call GET /check?str="" '
                 })
             });
-        app.route('/check').get((req: Request, res: Response) => {
-           this.spellcheckController.Check(req, res); 
+        app.route('/check')
+            .get((req: Request, res: Response) => {
+                this.spellcheckController.Check(req, res); 
         });
     }
 }
