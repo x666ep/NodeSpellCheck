@@ -3,9 +3,9 @@ import { Request, Response } from 'express';
 
 export class SpellcheckController {
     
-    public spellCheck:Spellcheck = new Spellcheck();
+    public spellCheck: Spellcheck = new Spellcheck();
     
-    public Check(req: Request, res: Response){
+    public Check(req: Request, res: Response): void {
         res.json({errors: this.spellCheck.check(req.query.str)});
     }
 }

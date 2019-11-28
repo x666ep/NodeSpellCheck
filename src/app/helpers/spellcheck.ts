@@ -3,8 +3,8 @@ import path from 'path'
 
 export class Spellcheck {
     
-    private dictionariesPath: string = "dictionaries";
-    private ruDictionary: string = "russian.txt";
+    private dictionariesPath = "dictionaries";
+    private ruDictionary  = "russian.txt";
 
     constructor() {
         const currentPath = path.join(__dirname, this.dictionariesPath, this.ruDictionary);
