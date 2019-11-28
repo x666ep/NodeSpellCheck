@@ -8,7 +8,7 @@ export class SpellRoutes {
         app.route('/')
             .get((req: Request, res: Response) => {
                 res.status(200).send({
-                    message: 'Welcome to spellcheck micro-service! For check you string call GET /check?str="" '
+                    message: 'Welcome to spellcheck micro-service! For check you string call GET /check?str='
                 })
             });
         app.route('/check')
